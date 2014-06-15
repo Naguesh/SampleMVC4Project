@@ -1,0 +1,41 @@
+﻿<div class="grid ui-grid-b">    
+    <div style="width: 20%; padding-right:5px; border-right: 3px solid #a4b97f;" class="ui-block-a grid-box">
+        <strong>Employees</strong>
+        <ul id="employee-list" data-role="listview" data-filter="true" class="ui-responsive" data-theme="c" />
+    </div>
+
+    <div style="width: 80%;" class="ui-block-b grid-box">
+        <div id="employee-info" style=" width: 100%; border-bottom: 3px solid #a4b97f;">
+            <div class="grid ui-grid-b ">
+                <div id="emp-image" style="width: 15%;" class="ui-block-a grid-box"></div>
+
+                <div style="width: 80%; text-align: left; margin-left: 20px" class="ui-block-b grid-box ui-responsive">
+                    <h1></h1>
+                    <h3></h3>
+                </div>
+            </div>
+        </div>
+
+        <div id="timesheet-info" style="width: 100%;">
+            <div class="grid ui-grid-b my-breakpoint ">
+                <div style="width: 50%;" class="ui-block-a grid-box">
+                    <div style="width: 100%;" id="wrapper">
+                        @Html.CreateBlankTable("timesheet-table")
+                    </div>
+                </div>
+                <div style="width: 50%;" class="ui-block-b grid-box">
+                    <div id="graph">
+                        <h3> Graphs</h3>
+                        <div id="chart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+

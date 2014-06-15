@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" />
+    <meta name="viewport" content="user-scalable=no,user-scalable=no, " maximum-scale="1,"
+          minimum-scale="1," width="device-width," height="device-height," target-densitydpi="device-dpi" />
+
+    <title>@ViewBag.Title</title>
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+    
+
+    @* using when Internet is down debug mode
+    <script src="~//jquery.min.js"></script>
+    <link href="~/Content/jquery.mobile-1.3.2.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery.mobile-1.3.2.min.js"></script>*@
+    
+    @Styles.Render("~/Content/css")
+
+</head>
+<body>
+    <div id="timesheet" data-role="page">
+        <div id="header" data-role="header" data-position="fixed" data-theme="c" style="text-align: right;">
+            <h1 style="text-align: right;margin-right: 20px;">Employee Timesheet Report</h1>
+        </div>
+
+        <div id="content" data-role="content">
+            @RenderBody()
+        </div>
+
+        <div id="footer" data-role="footer" data-position="fixed" data-theme="c">
+            <h1></h1>
+        </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+    @Scripts.Render("~/bundles/site")
+    @RenderSection("scripts", required: false)
+
+    <script type="text/javascript">
+        $("#timesheet").on("pagebeforeshow", function () {
+            timesheetPageBeforeShow();
+        })
+
+        $("#timesheet").on("pageshow", function () {
+            timesheetPageShow();            
+        });
+    </script>
+</body>
+</html>

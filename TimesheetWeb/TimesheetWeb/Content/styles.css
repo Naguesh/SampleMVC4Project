@@ -1,0 +1,73 @@
+/** page structure **/
+#wrapper {
+    width: 90%!important;
+    background: #fff;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 2px solid #a4b97f;
+}
+
+#timesheet-table {
+    margin: 0 auto;
+    font-size: 1.2em;
+    margin-bottom: 0px;
+    width: 100%;     
+}
+
+
+#timesheet-table thead {
+  cursor: pointer;
+  background: #c9dff0;
+   width: 100%;
+}
+
+
+#timesheet-table thead tr th { 
+  font-weight: bold;
+  padding: 12px 30px;
+  padding-left: 10px;
+  text-align:left;
+  width: 100%;
+}
+
+
+#timesheet-table thead tr th span { 
+  padding-right: 20px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+#timesheet-table tbody { 
+     width: 100%;
+}
+
+
+#timesheet-table thead tr th.headerSortUp, #timesheet-table thead tr th.headerSortDown {
+  background: #acc8dd;
+}
+
+#timesheet-table thead tr th.headerSortUp span {
+  background-image: url('../Content/images/up-arrow.png');
+}
+#timesheet-table thead tr th.headerSortDown span {
+  background-image: url('../Content/images/down-arrow.png');
+}
+
+
+#timesheet-table tbody tr { 
+  color: #555;
+}
+#timesheet-table tbody tr td {
+  text-align: left;
+  padding: 15px 10px;
+}
+#timesheet-table tbody tr td.lalign {
+  text-align: left;
+}
+
+#timesheet-table1 thead tr th.headerSortUp span {
+  background-image: url('../Content/images/up-arrow.png');
+}
+#timesheet-table1 thead tr th.headerSortDown span {
+  background-image: url('../Content/images/down-arrow.png');
+}
